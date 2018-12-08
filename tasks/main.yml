@@ -1,0 +1,10 @@
+---
+# tasks file for install-emby
+
+- include_tasks: "{{ item }}"
+  with_first_found:
+   - "{{ ansible_distribution | lower }}.yml"
+   - "{{ ansible_os_family | lower }}.yml"
+   - "os_defaults.yml"
+  tags: 
+   - main

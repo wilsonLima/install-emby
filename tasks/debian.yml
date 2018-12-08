@@ -1,0 +1,18 @@
+---
+
+- name: Baixando o pacote do Emby
+  get_url:
+   url: "https://github.com/MediaBrowser/Emby.Releases/releases/download/{{ emby_version }}/emby-server-deb_{{ emby_version }}_amd64.deb"
+   dest: "/tmp/emby-server-deb_{{ emby_version }}_amd64.deb"
+   validate_certs: no
+  tags:
+    - emby
+
+- name: Instalando o pacote do Emby
+  apt:
+    deb: "/tmp/emby-server-deb_{{ emby_version }}_amd64.deb"
+    update_cache: yes
+    force: yes
+  become: true
+  tags:
+    - emby

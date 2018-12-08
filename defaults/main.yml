@@ -1,0 +1,4 @@
+---
+# defaults file for install-emby
+
+emby_version: "3.5.3.0"
