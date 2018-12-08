@@ -1,7 +1,7 @@
 install-emby
 =========
 
-Role do Ansible para a instalação do Emby Server.
+Role do Ansible para a instalação do Emby Media Server.
 
 Distribuições Suportadas pela Role
 ------------
