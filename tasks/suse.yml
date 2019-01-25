@@ -1,6 +1,6 @@
 ---
 
-- name: Instalando o pacote do Emby
+- name: "Instalando o pacote do Emby - {{ emby_version }}"
   zypper:
     name: "https://github.com/MediaBrowser/Emby.Releases/releases/download/{{ emby_version }}/emby-server-rpm_{{ emby_version }}_x86_64.rpm"
     state: present

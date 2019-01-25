@@ -1,6 +1,6 @@
 ---
 
-- name: Baixando o pacote do Emby
+- name: "Baixando o pacote do Emby - {{ emby_version }}"
   get_url:
    url: "https://github.com/MediaBrowser/Emby.Releases/releases/download/{{ emby_version }}/emby-server-rpm_{{ emby_version }}_x86_64.rpm"
    dest: "/tmp/emby-server-rpm_{{ emby_version }}_x86_64.rpm"
@@ -8,7 +8,7 @@
   tags:
    - emby
 
-- name: Instalando o pacote do Emby
+- name: "Instalando o pacote do Emby - {{ emby_version }}"
   dnf:
     name: "/tmp/emby-server-rpm_{{ emby_version }}_x86_64.rpm"
     state: present
