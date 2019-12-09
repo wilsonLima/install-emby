@@ -63,3 +63,9 @@ Exemplo de Comandos
 Comando para executar todas as tasks:
 
     ansible-playbook -i <caminho_inventario> <caminho_playbook>
+
+
+License
+-------
+
+MIT License
