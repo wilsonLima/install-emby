@@ -18,7 +18,7 @@ Distribuições Suportadas pela Role
 Variáveis da Role 
 --------------
 
-- emby_version: Versão do Emby Server. Valor default 4.1.1.0 
+- emby_version: Versão do Emby Server. Valor default 4.3.1.0 
 
 Dependências da Role 
 --------------
@@ -54,7 +54,7 @@ Exemplo de uso da Role com variáveis:
 
     - hosts: desktop
       roles:
-         - { role: install-emby, emby_version: "4.1.1.0" }
+         - { role: install-emby, emby_version: "4.3.1.0" }
 
 
 Exemplo de Comandos
