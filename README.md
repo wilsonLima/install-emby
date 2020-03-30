@@ -18,7 +18,7 @@ Distribuições Suportadas pela Role
 Variáveis da Role 
 --------------
 
-- emby_version: Versão do Emby Server. Valor default 4.3.1.0 
+- emby_version: Versão do Emby Server. Valor default 4.4.0.40 
 
 Dependências da Role 
 --------------
@@ -26,19 +26,6 @@ Dependências da Role
 Debian, Linux Mint e Ubuntu:
 
 - openssh-server. Ex.: sudo apt install openssh-server
-- python-apt (python 2)
-- python3-apt (python 3)
-- aptitude
-
-Fedora:
-
-- Pacote python2-dnf. Ex.: sudo dnf install python2-dnf
-- Pacote libselinux-python. Ex.: sudo dnf install libselinux-python
-
-openSUSE:
-
-- python-xml
-- rpm
 
 
 Exemplo de Playbook
