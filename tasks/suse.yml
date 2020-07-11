@@ -4,7 +4,7 @@
   zypper:
     name: "https://github.com/MediaBrowser/Emby.Releases/releases/download/{{ emby_version }}/emby-server-rpm_{{ emby_version }}_x86_64.rpm"
     state: present
-    force: yes
+    update_cache: yes
     disable_gpg_check: yes
   become: true
   tags:
