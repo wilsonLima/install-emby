@@ -1,5 +1,15 @@
 ---
 
+
+- name: "Atualizando apt cache"
+  apt: 
+    update_cache: yes 
+    cache_valid_time: 7200
+  become: true
+  tags:
+    - emby
+
+
 - name: "Baixando o pacote do Emby - {{ emby_version }}"
   get_url:
    url: "https://github.com/MediaBrowser/Emby.Releases/releases/download/{{ emby_version }}/emby-server-deb_{{ emby_version }}_amd64.deb"
@@ -8,10 +18,10 @@
   tags:
     - emby
 
+
 - name: "Instalando o pacote do Emby - {{ emby_version }}" 
   apt:
     deb: "/tmp/emby-server-deb_{{ emby_version }}_amd64.deb"
-    update_cache: yes
     force: yes
   become: true
   tags:
