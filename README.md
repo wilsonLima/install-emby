@@ -18,7 +18,7 @@ Distribuições Suportadas pela Role
 Variáveis da Role 
 --------------
 
-- emby_version: Versão do Emby Server. Valor default 4.6.4.0
+- emby_version: Versão do Emby Server. Valor default 4.7.1.0
 
 Dependências da Role 
 --------------
