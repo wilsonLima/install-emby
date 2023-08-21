@@ -6,13 +6,13 @@ Role do Ansible para a instalação do Emby Media Server.
 Distribuições Suportadas pela Role
 ------------
 
-- RedHat/CentOS 7 ou Superior
-- Debian 9 ou superior
-- Fedora 28 ou superior
-- Linux Mint 18 ou superior
-- openSUSE Leap 15 ou superior
+- RedHat/CentOS 9 ou Superior
+- Debian 11 ou superior
+- Fedora 37 ou superior
+- Linux Mint 21.1 ou superior
+- openSUSE Leap 15.4 ou superior
 - openSUSE Tumbleweed
-- Ubuntu 18.04 ou superior
+- Ubuntu 22.10 ou superior
 
   
 Variáveis da Role 
